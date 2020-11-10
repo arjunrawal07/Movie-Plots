@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Movie(models.Model):
-    year = models.CharField(max_length=100)
+    year = models.IntegerField()
     title = models.TextField()
     origin = models.TextField()
     director = models.TextField()
