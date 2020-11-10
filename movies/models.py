@@ -11,7 +11,7 @@ class Movie(models.Model):
     cast = models.TextField()
     genre = models.TextField()
     wikipage = models.TextField()
-    plot = models.TextField()
+    plot = models.TextField(null=True)
 
     def __str__(self):
         return self.title
